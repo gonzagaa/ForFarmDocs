@@ -1,0 +1,80 @@
+#gestao {
+    position: relative;
+    overflow: hidden;
+
+    background: var(--gradient);
+}
+
+#gestao header h2 {
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 600;
+
+    margin-bottom: 4rem;
+}
+
+#gestao .text .topics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    margin-bottom: 4rem;
+
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 2px solid #fff;
+    background: var(--green2);
+}
+
+#gestao .text .topics h3 {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#gestao .text p {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+@media (min-width: 1080px) {
+    section#gestao{
+        background: #ededed;
+        padding-block: 5rem;
+    }
+
+    section#gestao .wrapper {
+        background: var(--gradient);
+        padding: 6rem;
+        border-radius: 6rem;
+    }
+
+    section#gestao header h2 {
+        font-size: 3.5rem;
+    }
+
+    section#gestao .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#gestao .text .topics {
+        width: 70%;
+    }
+
+    section#gestao .text .topics h3 {
+        font-size: 2.2rem;
+    }
+
+    section#gestao .text p {
+        font-size: 2.5rem;
+    }
+}

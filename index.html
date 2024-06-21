@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Damatta - Sua engenharia parceira</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/formfarm logo branca.svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Funcionalidades</a></li>
+                    <li><a onclick="closeMenu()" href="#faq">Perguntas Frequentes</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                    
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/formfarm logo branca.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <!-- <div class="video">
+            <video autoplay muted loop>
+                <source src="./assets/456055_Bangkok_Thailand_1280x720.mp4" type="video/mp4">
+            </video>
+        </div> -->
+        
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+
+                    <div class="text-content">
+                        <img data-aos="fade-up-left" class="logo" src="./assets/formfarm logo verde.svg" alt="">
+                        <h1 data-aos="fade-up-left">ForFarmDocs</h1>
+                        <p data-aos="fade-up-left">O aplicativo que <span>digitalizou o agro</span>.</p>
+                        <div data-aos="fade-up-left" class="buttons">
+                            <a href="#"><img src="./assets/Google Play.png" alt=""></a>
+                            <a href="#"><img src="./assets/App Store.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="interactive-image" class="image">
+                    <img src="./assets/bg formfarm.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">FUNCIONALIDADES</span>
+                    <h2>Confira as funcionalidades do app.</h2>
+                </header>
+
+                <div class="cards">
+                    <div data-aos="fade-up-left" class="card">
+                        <img src="./assets/icons/cadastro.png" alt="">
+                        <h3>Cadastro Ilimitado</h3>
+                        <p>Cadastre todas as suas fazendas sem limites.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <img src="./assets/icons/notificacoes.png" alt="">
+                        <h3>Notificações Financeiras</h3>
+                        <p>Receba lembretes sobre financiamentos e custeios.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <img src="./assets/icons/gestao.png" alt="">
+                        <h3>Gestão de Licenças</h3>
+                        <p>Organize todas as suas licenças de forma prática e eficiente.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <img src="./assets/icons/alertas.png" alt="">
+                        <h3>Alertas de Vencimento</h3>
+                        <p>Nunca perca um prazo importante novamente.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <img src="./assets/icons/consultas.png" alt="">
+                        <h3>Consulta de Embargos</h3>
+                        <p>Verifique a conformidade legal de suas propriedades.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="card">
+                        <img src="./assets/icons/interface.png" alt="">
+                        <h3>Interface Intuitiva</h3>
+                        <p>Facilidade de uso para uma gestão prática e eficiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="gestao">
+            <div class="wrapper">
+                <header>
+                    <h2>Gestão Completa de Documentos</h2>
+                </header>
+    
+                <div class="text">
+                    <div class="topics">
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> CCIR</h3>
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> ITR</h3>
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> CAR</h3>
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> Embargos</h3>
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> Licenças</h3>
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> Outorgas</h3>
+                        <h3><ion-icon name="checkmark-outline"></ion-icon> Barragens</h3>
+                    </div>
+                    <p>Todos os documentos da sua fazenda salvos na núvem, acessíveis a qualquer momento e lugar.</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="faq">
+        <div class="wrapper">
+          <header data-aos="fade-up-right">
+            <span class="span">FAQ</span>
+            <h2>Perguntas Frequentes.</h2>
+          </header>
+  
+          <div class="details">
+            <details data-aos="fade-up-left" class="left">
+                <summary>1.	Como faço para cadastrar uma fazenda?<svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2AAF65" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></summary>
+                <p>Você pode cadastrar sua fazenda diretamente no aplicativo, acessando a seção de cadastro e preenchendo os dados necessários.</p>
+            </details>
+  
+            <details data-aos="fade-up-right" class="right">
+                <summary>2. O que acontece se eu perder um documento?<svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2AAF65" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></summary>
+                <p>Todos os documentos são armazenados na nuvem, permitindo que você os acesse a qualquer momento.</p>
+            </details>
+
+            <details data-aos="fade-up-left" class="left">
+                <summary>3.	O ForFarmDocs é seguro?<svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2AAF65" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></summary>
+                <p>Sim, todos os dados são criptografados e armazenados com segurança.</p>
+            </details>
+  
+            <details data-aos="fade-up-right" class="right">
+                <summary>4. Posso acessar meus documentos offline?<svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2AAF65" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></summary>
+                <p>No momento, o acesso offline não está disponível. Você precisa estar conectado à internet para acessar seus documentos.</p>
+            </details>
+
+            <details data-aos="fade-up-left" class="left">
+                <summary>5.	Como recebo notificações sobre meus documentos?<svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2AAF65" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></summary>
+                <p>As notificações são enviadas diretamente para o seu dispositivo, alertando sobre prazos e vencimentos importantes.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    
+    <section id="privacidade">
+            <div class="wrapper">
+                <div class="content">
+                    <header>
+                        <img src="./assets/icons/seguranca.png" alt="">
+                        <h2>Privacidade</h2>
+                    </header>
+        
+                    <div class="text">
+                        <p>Sua privacidade é nossa prioridade. Todos os dados são criptografados e armazenados com segurança.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contato">
+        <div class="wrapper">
+            <header>
+                <span class="span">AJUDA</span>
+                <h2>Precisa de ajuda?</h2>
+            </header>
+
+            <div class="contatos">
+                <p>contato@forfarmdocs.com</p>
+                <p><a target="_blank" href="tel:+55-62-99674-5628">(62) 99674-5628</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - FormFarmDocs</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

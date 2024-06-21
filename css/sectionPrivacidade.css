@@ -1,0 +1,65 @@
+#privacidade {
+    background: #ededed;
+    position: relative;
+    overflow: hidden;
+    padding-block: 3rem;
+}
+
+#privacidade .wrapper .content {
+    background-color: #fff;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    border-radius: 3rem;
+
+    box-shadow:  12px 12px 24px #c9c9c9bc,
+    -12px -12px 24px #ffffffba;
+}
+
+#privacidade header img {
+    width: 6rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background: var(--gradient);
+}
+
+#privacidade h2 {
+    margin-top: .5rem;
+    font-size: 3rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+}
+
+#privacidade p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+@media (min-width: 1080px) {
+    section#privacidade .content {
+        text-align: center;
+    }
+
+    section#privacidade header {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    section#privacidade .wrapper .content {
+        padding-block: 5rem;
+    }
+
+    section#privacidade header img {
+        width: 8rem;
+    }
+    
+    section#privacidade header h2 {
+        font-size: 4rem;
+    }
+
+    section#privacidade p {
+        font-size: 2rem;
+    }
+}
