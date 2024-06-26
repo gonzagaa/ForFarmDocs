@@ -8,7 +8,7 @@
 
     position: relative;
     z-index: 2;
-    background-image: url(../assets/bg\ formfarm.png);
+    background-image: url(../assets/bgforfarm.jpg);
     background-position-x: 70%;
     background-position-y: 50%;
 }
@@ -23,6 +23,12 @@
     width: 100%;
     height: 100vh;
     filter: brightness(.5);
+}
+
+#home .content .image img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
 }
 
 #home::before {
@@ -229,7 +235,7 @@
         top: 0;
 
         /* From https://css.glass */
-        background: rgba(0, 0, 0, 0.122);
+        background: rgba(0, 0, 0, 0.269);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
