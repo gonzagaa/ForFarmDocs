@@ -18,6 +18,7 @@
     --green: #31C573;
 
     --gradient: linear-gradient(45deg, #2AAF65, #31C573);
+    --gradient-white: linear-gradient(to bottom, #ffffff, #c1f8da);
 }
 
 html {
